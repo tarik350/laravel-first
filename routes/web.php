@@ -18,13 +18,15 @@ Route::get('/', function () {
 });
 
 Route::get('/pizzas' ,function(){
+
+    $name = request('name');
+    $taste = request('taste');
+    $price  = request('price');
     $pizza = [
         ['type' => "south africn" , 'taste' => "chicken taste" , 'price' => 9 ],
         ['type' => 'volcano' ,"taste" => "spicey food" ,"price" => 23  ],
-        ['type' => 'veg supreme' ,"taste" => "vagetable " ,"price" => 14  ]
-
+        ['type' => 'veg supreme' ,"taste" => "vagetable " ,"price" => 14  ],
+        ['type' => $name , "taste" => $taste , "price" => $price]
     ];
     return view('pizzas', ['pizzas' => $pizza]);
-    // return "pizzas";
-    // return ["name" => "vegitable pizza", "ingredient" => "some ingredient"];
-}); 
+});
