@@ -20,9 +20,6 @@
 </head>
 
 <body class="flex flex-col min-h-screen">
-
-
-
     <header class=" header flex justify-between items-center ]">
         <div class="   relative flex items-center  ">
             <img class="w-16 h-16 rounded-full  object-cover" src="/img/pizza image.avif" alt="pizza image"></img>
