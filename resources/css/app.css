@@ -5,3 +5,18 @@
 .header {
     @apply w-full  px-20 bg-teal-900 text-white  h-[100px];
 }
+
+.lable {
+    @apply text-[22px] font-bold;
+}
+
+.select {
+    @apply border-4 px-16 py-2 mx-4;
+}
+
+.container {
+    @apply flex justify-between my-[12px];
+}
+.btn {
+    @apply my-12 border-2 bg-blue-800 px-10 py-2 rounded-2xl text-white;
+}

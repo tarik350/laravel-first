@@ -26,9 +26,14 @@
             <p class="font-bold px-4">pizza <span class="block">housse</span></p>
         </div>
         <ul class="flex ">
-            <li class="hover:text-blue-300 transition-all ease-in-out duration-100 cursor-pointer ">home</li>
-            <li class="px-6 hover:text-blue-300 transition-all ease-in-out duration-100 cursor-pointer ">about</li>
-            <li class="hover:text-blue-300 transition-all ease-in-out duration-100 cursor-pointer"> contact</li>
+            <li class="hover:text-blue-300 transition-all ease-in-out duration-100 cursor-pointer ">
+                <a href={{ route('login') }}>login</a>
+            </li>
+
+            <li class="px-6 hover:text-blue-300 transition-all ease-in-out duration-100 cursor-pointer ">
+                <a href={{ route('register') }}>register</a>
+            </li>
+            {{-- <li class="hover:text-blue-300 transition-all ease-in-out duration-100 cursor-pointer"> contact</li> --}}
         </ul>
     </header>
     <div class="">
